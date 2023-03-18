@@ -1,0 +1,95 @@
+/*
+primary font:gloock
+secondary font:roboto condensed
+Dark blue- rgb(70, 137, 244)
+lightblue- rgb(186, 212, 255)
+bold orange-rgb(229, 158,66)
+lightorange-rgb(255,227, 191)
+font-family:'Gloock', serif;
+font-family:'Roboto Condensed', sans-serif;
+*/
+.content {
+    animation-name: fade-in;
+    animation-duration:2s    
+}
+.sidebar {
+    animation-name: fade-in;
+    animation-duration:2s
+}
+
+img {
+    width: 400px;
+    height:200px ;
+    transition: 0.5s all;
+}
+img:hover{
+    height:250px;
+    width: 500px;
+}
+body {
+    background: rgba(186, 212, 255, 0.5);
+}
+#main {
+    grid-template-columns: 70% 30%;
+    display: grid;
+    grid-gap:50px
+    
+}
+p {
+    font-family: 'Gloock', serif;
+}
+li {
+    font-family: 'Gloock' serif; 
+}
+a {
+    font-family: 'Gloock' serif; 
+}
+h1 {
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+h2 {
+    font-family: 'Roboto Condensed, sans-serif';
+}
+.sidebar {
+    background: rgb(255,227, 191);
+}
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-grid > img {
+    margin: 10px;
+} 
+#image-1 {
+    float: right;
+    margin: 15px;
+    height: 300px
+}
+
+.post {
+    border: 2px solid rgb(229, 158,66);
+    margin: 10px;
+}
+.post-title {
+    margin-left: 5px;
+}
+.post-text{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.post > a {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: rgb(70, 137, 244);
+    transition: 0.5s color;
+}
+.post > a:hover {
+    color: rgb(186, 212, 255)  
+        
+}
+@keyframes fade-in {
+    from {opacity:0;}
+    to{opacity: 1;}
+}
